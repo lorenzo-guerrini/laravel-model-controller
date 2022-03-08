@@ -7,5 +7,6 @@
 </head>
 <body>
     <h1>Movies</h1>
+    @dump($moviesList);
 </body>
 </html>
