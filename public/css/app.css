@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+body h1 {
+  text-align: center;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+}
+.container .card {
+  border: 3px dotted black;
+  border-radius: 3px;
+  padding: 25px 15px 40px;
+  margin: 10px 0;
+}
+.container .card h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.container .card ul {
+  list-style-type: circle;
+  margin-left: 30px;
+}
+.container .card:hover {
+  background-color: black;
+  color: white;
+  border: 3px dotted white;
+}
+.container .card:hover ul {
+  list-style-type: disc;
+}

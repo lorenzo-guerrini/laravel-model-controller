@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movies</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 </head>
 
 <body>
     <h1>Movies</h1>
-    <ul>
+    <div class="container">
         @foreach ($moviesList as $item)
-            <li>
-                {{ $item->title }} ({{$item->original_title}})
+            <div class="card">
+                <h3>{{ $item->title }} ({{ $item->original_title }})</h3>
+
                 <ul>
                     <li>Nationality: {{ $item->nationality }}</li>
                     <li>Date: {{ $item->date }}</li>
                     <li>Vote: {{ $item->vote }}</li>
                 </ul>
-            </li>
+            </div>
         @endforeach
-    </ul>
+    </div>
 </body>
 
 </html>
